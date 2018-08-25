@@ -1,17 +1,12 @@
 <?php get_header(); ?>
-  <main class="container" role="main">
-    <h2>Welcome to Dublin English</h2>
-    <h3 class="subtitle">Maximum 4 students per class</h3>
-    <section class="courses">
-      <h2 class="courses__title">Our Courses</h2>
-      <div class="coursesList">
+  <main class="container home" role="main">
+    <section class="posts">
+      <h2 class="posts__title">Post recentes</h2>
       <?php
-        $args = array( 'post_type' => 'course', 'posts_per_page' => 10 );
-        $loop = new WP_Query( $args );
-        while ( $loop->have_posts() ) : $loop->the_post();
-          get_template_part( 'templates/course', 'card' );
-        endwhile; ?>
-      </div>
+        while ( have_posts() ) : the_post();
+          get_template_part( 'templates/post', 'card' );
+        endwhile;
+      ?>
     </section>
   </main>
 <?php get_footer(); ?>

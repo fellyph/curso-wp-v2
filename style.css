@@ -24,7 +24,37 @@ footer {
 
 body {
   font-family: 'Open Sans', sans-serif;
-  color: #777;
+  color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #000;
+  font-family: 'Playfair Display', serif;
+}
+
+.home {
+  background: #f2f2f2;
+}
+
+.mainTitle {
+  text-transform: uppercase;
+  text-align: center
+}
+
+.subtitle {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  width: 1024px;
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 1em;
 }
 
 .btn {
@@ -36,9 +66,8 @@ body {
 }
 
 .btn:hover {
-  background: #2733b9;
+  background: #25282a;
 }
-
 
 /* 
  *
@@ -49,7 +78,8 @@ body {
   color: #333;
   display: fixed;
   top: 0;
-  border-bottom: 3px solid #f4f4f4;
+  border-bottom: 3px solid #ddd;
+  background: #FFF
 }
 
 .top-bar a {
@@ -96,11 +126,10 @@ body {
  * BANNER ***************
  */
 
-
 .banner {
   display: flex;
   min-height: 400px;
-  background: #2733b9;
+  background: #25282a;
   color: #FFFFFF;
   position: relative;
   background-position: top center;
@@ -150,10 +179,18 @@ body {
 
 
 .footer {
-  background: #f44336;
-  color: #FFFFFF;
+  padding-top: 6em;
+  background: #25282a;
+  color: #f6f6f6;
   padding: 1em;
 }
+
+.footer h2, 
+.footer h3,
+.footer a {
+  color: #f3f3f3;
+}
+
 
 /*
  *
@@ -161,22 +198,21 @@ body {
  *
  */
 
-.courses {
+.posts {
   max-width: 100%;
   width: 1024px;
   margin: 0 auto;
   padding: 2em 1em;
-  text-align: center;
 }
 
 
-.courses__title {
+.posts__title {
   text-align: center;
   text-transform: uppercase;
   font-family: 'Playfair Display', serif;
 }
 
-.courses__title:after {
+.posts__title:after {
   content: '';
   background: #f44336;
   display: block;
@@ -184,10 +220,6 @@ body {
   height: 5px;
   border-radius: 3px;
   margin: 3px auto;
-}
-
-.courses__list {
-  display: flex;
 }
 
 /*
@@ -231,4 +263,29 @@ body {
 .courseCard .btn {
   display: inline-block;
   margin: 1em 0;
+}
+
+.postCard {
+  background: #fff;
+  margin-bottom: 1.5em;
+  color: #808080;
+}
+
+.postCard__title a {
+  color: #000;
+}
+.postCard__info {
+  padding: 1.5em;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.postCard__thumbnail {
+  padding: 0;
+  margin: 0 0 1em 0;
+}
+
+.postCard__thumbnail img {
+  height: auto;
+  max-width: 100%;
 }

@@ -18,5 +18,7 @@ function create_post_type() {
 add_action( 'init', 'create_post_type' );
 add_theme_support('post-thumbnails');
 
+add_image_size( 'post-size', 720, 300, true );
+add_image_size( 'large-post-size', 1024, 400, true );
 add_image_size( 'card-size', 520, 400, true );
 add_image_size( 'banner-size', 9999, 400, true );

@@ -5,7 +5,7 @@
       <p><a href="mailto:test@dublin.school">test@dublin.school</a></p>
       <p><a href="tel:999999999">99 999 9999</a></p>
     </div>
-    Dublin English School
+    <h4><?php bloginfo('name') ?></h4>
     <div class="footer__widget footer__links">
     <?php wp_nav_menu(array(
             'theme_location' => 'main-menu',
